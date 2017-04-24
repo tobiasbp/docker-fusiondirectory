@@ -29,12 +29,13 @@ Connection variables
 
 These environment variables are used to connect to the LDAP server:
 
-* `LDAP_HOST`: ldap server (default: `ldap-server`)
-* `LDAP_PORT`: tcp port on ldap server (default: `389`)
-* `LDAP_SERVER_URL`: combination of protocol, host, and port (default: `ldap://${LDAP_HOST}:${LDAP_PORT}`)
+* `LDAP_HOST`: URL/IP af ldap server (default: `ldap-server`)
+* `LDAP_PORT`: Port on ldap server (default: `389`)
+* `LDAP_SERVER_URL`: Combination of host, and port (default: `ldap://${LDAP_HOST}:${LDAP_PORT}`)
 * `LDAP_DOMAIN`: LDAP domain (default: `example.com`)
-* `LDAP_ROOTDN` - the ROOT DN of ldap server default is: `cn=Manager,<domain suffix, e.g. dc=example,dc=com`)
-* `LDAP_ROOTPW` - The ROOT password of the ROOTDN of LDAP server
+* `LDAP_ROOTDN` : ROOT DN of ldap server default is: `cn=Manager,<domain suffix, e.g. dc=example,dc=com`)
+* `LDAP_ROOTPW` : Password of the ROOTDN of the ldap server
+* `LDAP_TLS` : Encrypt connections with the ldap server (default is: `TRUE`) 
 
 Web Service Access
 ------------------
