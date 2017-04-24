@@ -35,8 +35,8 @@ These environment variables are used to connect to the LDAP server:
 * `LDAP_DOMAIN`: LDAP domain (default: `example.com`)
 * `LDAP_ROOTDN` : ROOT DN of ldap server default is: `cn=Manager,<domain suffix, e.g. dc=example,dc=com`)
 * `LDAP_ROOTPW` : Password of the ROOTDN of the ldap server
-* `LDAP_TLS` : Encrypt connections with the ldap server (default is: `TRUE`) 
-* `TLS_REQCERT` : Specifies in ldap.conf what checks to perform on server certificates in a TLS session, if any. (default is: never)
+* `LDAP_TLS` : Encrypt connections with the ldap server [FALSE|TRUE] (default is: `TRUE`) 
+* `TLS_REQCERT` : Specifies in ldap.conf what checks to perform on server certificates in a TLS session, if any [never|allow|try|demand] (default is: never)
 
 Web Service Access
 ------------------
