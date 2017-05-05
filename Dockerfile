@@ -80,6 +80,6 @@ RUN echo  "TLS_REQCERT    $TLS_REQCERT" >> /etc/ldap/ldap.conf
 # Install FusionDirectory plugins
 
 
-EXPOSE 80
+EXPOSE 80 443
 
 CMD ["/start-fd"]
