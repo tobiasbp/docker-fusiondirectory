@@ -2,6 +2,7 @@
 
 printf "Starting FusionDirectory ... ";
 
+
 if [ -z $LDAP_DOMAIN ] ; then
     printf "\n\nLDAP_DOMAIN is not defined!\n"
     exit 1
@@ -78,6 +79,10 @@ chown root:www-data /etc/fusiondirectory/fusiondirectory.conf
 
 yes Yes | fusiondirectory-setup --check-config
 yes Yes | fusiondirectory-setup --check-config
+
+
+# Enable SSL in apache
+a2enmod ssl
 
 rm -f /var/run/apache2/apache2.pid
 
